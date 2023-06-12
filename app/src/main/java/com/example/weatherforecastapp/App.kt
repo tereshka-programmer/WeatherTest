@@ -1,6 +1,7 @@
 package com.example.weatherforecastapp
 
 import android.app.Application
+import com.airbnb.epoxy.Carousel
 import com.airbnb.mvrx.Mavericks
 import com.airbnb.mvrx.MavericksViewModelConfigFactory
 import com.example.weatherforecastapp.domain.repository.WeatherRepository
@@ -14,5 +15,6 @@ class App : Application() {
     override fun onCreate() {
         super.onCreate()
         Mavericks.initialize(this, MavericksViewModelConfigFactory(applicationContext))
+        Carousel.setDefaultGlobalSnapHelperFactory(null)
     }
 }
