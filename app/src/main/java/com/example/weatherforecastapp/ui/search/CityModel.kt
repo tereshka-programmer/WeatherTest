@@ -9,7 +9,7 @@ import com.airbnb.epoxy.EpoxyModelWithHolder
 import com.example.weatherforecastapp.R
 
 @EpoxyModelClass(layout = R.layout.city_item)
-abstract class CityItemHolder : EpoxyModelWithHolder<CityItemHolder.Holder>() {
+abstract class CityModel : EpoxyModelWithHolder<CityModel.Holder>() {
 
     @EpoxyAttribute
     lateinit var cityName: String

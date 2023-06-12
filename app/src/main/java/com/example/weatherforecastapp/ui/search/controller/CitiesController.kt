@@ -2,9 +2,15 @@ package com.example.weatherforecastapp.ui.search.controller
 
 import com.airbnb.epoxy.AsyncEpoxyController
 import com.airbnb.epoxy.EpoxyController
-import com.example.weatherforecastapp.ui.search.CityItemHolder
+import com.airbnb.epoxy.TypedEpoxyController
+import com.example.weatherforecastapp.ui.search.CitiesObject
+import com.example.weatherforecastapp.ui.search.CityModel
 
-class CitiesController : AsyncEpoxyController() {
+interface Listener {
+    fun sendCity(city: String)
+}
+
+class CitiesController : EpoxyController() {
 
     var cities = emptyList<String>()
         set(value) {
@@ -12,10 +18,13 @@ class CitiesController : AsyncEpoxyController() {
             requestModelBuild()
         }
 
+    init {
+        cities = CitiesObject.listOfCities
+    }
 
     override fun buildModels() {
-        cities.forEach { cityName ->
-
+        cities.forEach {
+            //
         }
     }
 }
