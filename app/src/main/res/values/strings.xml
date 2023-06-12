@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">WeatherForecastApp</string>
+    <string name="today">Today</string>
+    <string name="sunday">Sunday</string>
+    <string name="tomorrow">Tomorrow</string>
+
+    <string name="currentTemp">%1$s \u2109</string>
+    <string name="currentWild">Wild: %1$s mph</string>
+    <string name="humidity">Humidity: %1$s</string>
+
+    <string name="tempForDays">%1$s\u00B0 %1$s\u2109</string>
+    <string name="city">City</string>
+
+
+</resources>
